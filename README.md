@@ -29,9 +29,9 @@ This is the repository containing code for the web representation of the Biophys
 - [ ] Make p5js code for simulation of protein interaction
   - [ ] make UI code
   - [ ] extend simulation abckend by code for interaction
-  - [ ] implement interactive adjustment of interaction strength
+  - [ ] implement interactive adjustment of interaction strength
 - [ ] Collect images for page
 - [ ] Link to our existing analysis code on Github
-  - [ ] make repo public (or make a public fork)
-  - [ ] tidy up code
+  - [ ] make repo public (or make a public fork)
+  - [ ] tidy up code
   - [ ] add minimal docs
