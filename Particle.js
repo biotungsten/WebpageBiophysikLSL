@@ -34,19 +34,18 @@ class Particle {
         return diffusor
     }
 
-    updateParticle(particles, draw=true) {
+    updateParticle(func, arg, draw=true) {
         let localScale = 1;
         let diffusor = this.diffuse(localScale)
         this.updatePosition();
         if (draw == true) {
-            this.drawParticle()
+            this.drawParticle(func, arg)
         }
         this.applyForce({x: -diffusor.x, y: -diffusor.y})
     }
 
-    drawParticle() {
-        fill(this.col);
-        circle(this.pos.x, this.pos.y, 4);
+    drawParticle(func, arg) {
+        func(arg, this)
     }
 
     randomDiffusionValue(scale=1) {
