@@ -54,7 +54,7 @@ class Particle {
         return Math.sqrt(distX*distX+distY*distY);
     }
 
-    updateParticle(func, arg, particles, draw=true) {
+    updateParticle(func, arg, particles, speed=1, draw=true) {
         if (this.protein == true) {
             for (let idx = 0; idx < particles.length; idx++) {
                 var element = particles[idx];
@@ -70,7 +70,7 @@ class Particle {
             localScale = 0.15
         }
         this.updateDiff();
-        let diffusor = this.diffuse(localScale);
+        let diffusor = this.diffuse(localScale*speed);
         this.updatePosition();
         if (draw == true) {
             this.drawParticle(func, arg);

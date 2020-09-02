@@ -8,3 +8,8 @@
 .cvn {
     padding: 10px;
 }
+
+p {
+    padding: 10px;
+    text-justify: inter-word;
+}
