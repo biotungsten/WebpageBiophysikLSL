@@ -1,8 +1,5 @@
 let canvas1 = function(p) {
 
- /*    Reins Tanitas button takes in all settings
-Restart button removes all custom settings
-Canvas mode */
     var particles = [];
     var speed = 1;
     let noOfParticles = 1000;
@@ -17,7 +14,6 @@ Canvas mode */
 
     var particleNumberSlider;
     var speedSlider;
-    
 
     drawer = function(p, th){
         if (th.protein == true) {
@@ -38,8 +34,7 @@ Canvas mode */
           p.vertex(sx, sy);
         }
         p.endShape(p.CLOSE);
-      }
-      
+    }
 
     p.setup = function(){
         var cnv = p.createCanvas(dimx, dimy);
@@ -68,7 +63,6 @@ Canvas mode */
             for (let j = 0; j < Math.floor(noOfParticles/noOfParticleTypes); j++) {
                 particles[Math.floor(i*noOfParticles/noOfParticleTypes)+j] = new Particle(typeCoordinates[i].x, typeCoordinates[i].y, color, dimx, dimy)
             }
-            
         }
     }
 
@@ -131,10 +125,7 @@ Canvas mode */
                     p.rect(element.x, element.y, 10, 10);
                 }
             }
-            
-            //TODO implement editing
         }
-        
     }
 }
 
@@ -202,7 +193,6 @@ let canvas2 = function(p) {
             for (let j = 0; j < Math.floor(noOfParticles/noOfParticleTypes); j++) {
                 particles[Math.floor(i*noOfParticles/noOfParticleTypes)+j] = new Particle(typeCoordinates[i].x, typeCoordinates[i].y, color, dimx, dimy)
             }
-            
         }
         particles[particles.length] = new Particle(200, 200, "NA", dimx, dimy, true);
     }
@@ -268,8 +258,7 @@ let canvas2 = function(p) {
                     p.rect(element.x, element.y, 10, 10);
                 }
             }
-            
-            //TODO implement editing
+
         }
         
     }
