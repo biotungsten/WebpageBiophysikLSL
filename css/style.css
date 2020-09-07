@@ -28,3 +28,7 @@ p {
     padding: 10px;
     text-justify: inter-word;
 }
+
+button {
+    border-radius: 5px;
+}

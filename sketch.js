@@ -58,22 +58,22 @@ let canvas1 = function(p) {
         p.textSize(15);
 
         var submissionButton = p.createButton('Einstellungen übernehmen');
-        submissionButton.position(500, 210);
+        submissionButton.position(450, 210);
         submissionButton.mousePressed(submit);
 
         var restartButton = p.createButton('Neu starten');
-        restartButton.position(500, 260);
+        restartButton.position(450, 260);
         restartButton.mousePressed(restart);
 
         var modeButton = p.createButton('Platziere neue Quellen');
-        modeButton.position(500, 160);
+        modeButton.position(450, 160);
         modeButton.mousePressed(modeChange);
 
         particleNumberSlider = p.createSlider(100, 5000, 1000, 100);
-        particleNumberSlider.position(500, 110);
+        particleNumberSlider.position(450, 110);
 
         speedSlider = p.createSlider(0.1, 3, 1, 0.1);
-        speedSlider.position(500, 60);
+        speedSlider.position(450, 60);
 
         for (let i = 0; i < noOfParticleTypes; i++) {
             var color = colors[i];
@@ -188,22 +188,22 @@ let canvas2 = function(p) {
         var cnv = p.createCanvas(dimx, dimy);
 
         var submissionButton2 = p.createButton('Einstellungen übernehmen');
-        submissionButton2.position(500, 650);
+        submissionButton2.position(450, 650);
         submissionButton2.mousePressed(submit2);
 
         var restartButton2 = p.createButton('Neu starten');
-        restartButton2.position(500, 700);
+        restartButton2.position(450, 700);
         restartButton2.mousePressed(restart2);
 
         var modeButton2 = p.createButton('Platziere neue Quellen');
-        modeButton2.position(500, 600);
+        modeButton2.position(450, 600);
         modeButton2.mousePressed(modeChange2);
 
         particleNumberSlider2 = p.createSlider(100, 5000, 1000, 100);
-        particleNumberSlider2.position(500, 550);
+        particleNumberSlider2.position(450, 550);
 
         speedSlider2 = p.createSlider(0.1, 3, 1, 0.1);
-        speedSlider2.position(500, 500);
+        speedSlider2.position(450, 500);
 
         for (let i = 0; i < noOfParticleTypes; i++) {
             var color = colors[i];
