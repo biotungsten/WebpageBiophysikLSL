@@ -6,3 +6,6 @@ In the code directory execute `browser-sync` and enter `http://localhost:3000/` 
 
 ## Contact
 In case of any questions open an issue or contact [biotungsten](https://github.com/biotungsten).
+
+## License
+This project is under GNU GENERAL PUBLIC LICENSE Version 2 OR Attribution-NonCommercial-ShareAlike 4.0 International. If latter is the case it is stated within the code. More details can be found in the license file.

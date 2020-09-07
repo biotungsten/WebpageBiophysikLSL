@@ -27,8 +27,7 @@ class Particle {
         this.low_diff = 1;
         if (protein == true){
             this.low_diff = 5;
-        }
-        
+        } 
     }
 
     applyForce(force) {

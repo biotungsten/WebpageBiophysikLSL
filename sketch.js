@@ -14,6 +14,10 @@
     You should have received a copy of the GNU General Public License along
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+    In case otherwise stated Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Public License applies.
+
 */
 let canvas1 = function(p) {
 
@@ -41,7 +45,8 @@ let canvas1 = function(p) {
             p.circle(th.pos.x, th.pos.y, 4);
         }
     }
-
+    
+    // under CC BY-NC-SA 4.0 from https://p5js.org/examples/form-regular-polygon.html
     polygon = function(x, y, radius, npoints) {
         let angle = 6.28 / npoints;
         p.beginShape();
@@ -57,6 +62,7 @@ let canvas1 = function(p) {
         var cnv = p.createCanvas(dimx, dimy);
         p.textSize(15);
 
+        //in the following lines ui elements are set up
         var submissionButton = p.createButton('Einstellungen übernehmen');
         submissionButton.position(450, 210);
         submissionButton.mousePressed(submit);
@@ -172,6 +178,7 @@ let canvas2 = function(p) {
         }
     }
 
+    // under CC BY-NC-SA 4.0 from https://p5js.org/examples/form-regular-polygon.html
     polygon = function(x, y, radius, npoints) {
         let angle = 6.28 / npoints;
         p.beginShape();
@@ -187,6 +194,7 @@ let canvas2 = function(p) {
     p.setup = function(){
         var cnv = p.createCanvas(dimx, dimy);
 
+        //in the following lines ui elements are set up
         var submissionButton2 = p.createButton('Einstellungen übernehmen');
         submissionButton2.position(450, 650);
         submissionButton2.mousePressed(submit2);
