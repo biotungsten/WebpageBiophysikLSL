@@ -29,6 +29,43 @@ p {
     text-justify: inter-word;
 }
 
+h1 {
+    padding-left: 10px;
+}
+
 button {
     border-radius: 5px;
+}
+
+button:active {
+    color: black;
+}
+
+input {
+    -webkit-appearance: none;
+    width: 10%;
+    height: 20px;
+    background: #bfbfbf;
+    outline: none;
+    opacity: 0.7;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    background: #6fb058;
+}
+
+input::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    background: #6fb058;
 }
