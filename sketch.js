@@ -20,12 +20,15 @@ Public License applies.
 
 */
 let canvas1 = function(p) {
+    rand = function(){
+        return Number(Math.round(Math.random() * 400));
+    }
 
     var particles = [];
     var speed = 1;
     let noOfParticles = 1000;
     let colors = ["red", "green", "yellow", "blue", "pink"]
-    let typeCoordinates = [{x: 50, y: 50}, {x: 150, y: 150}, {x: 250, y: 250}, {x: 300, y: 300}, {x: 350, y: 350}] 
+    let typeCoordinates = [{x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}] 
     let noOfParticleTypes = 3;
     let dimx = 400;
     let dimy = 400;
@@ -153,11 +156,15 @@ let canvas1 = function(p) {
 }
 
 let canvas2 = function(p) {
+    rand = function(){
+        return Number(Math.round(Math.random() * 400));
+    }
+
     var particles = [];
     let noOfParticles = 1000;
     var speed = 1;
     let colors = ["red", "green", "yellow", "blue", "pink"]
-    let typeCoordinates = [{x: 50, y: 50}, {x: 150, y: 150}, {x: 250, y: 250}, {x: 300, y: 300}, {x: 350, y: 350}] 
+    let typeCoordinates = [{x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}, {x: rand(), y: rand()}] 
     let noOfParticleTypes = 3;
     let dimx = 400;
     let dimy = 400;
